@@ -1,0 +1,54 @@
+.row {
+  display: flex;
+}
+
+.cell {
+  background-color: #2b2c34;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(62, 62, 62);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.snake {
+  background-color: rgb(191, 221, 221);
+  color: #2b2c34;
+  border-radius: 15%;
+}
+
+.danger-up {
+  border-top: 3px solid red;
+}
+
+.danger-down {
+  border-bottom: 3px solid red;
+}
+
+.icon {
+  animation: rotateAnimation 1s infinite alternate; 
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg); 
+  }
+}
+
+.count {
+  font-size: 30px;
+  margin: 10px;
+  color: chartreuse;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
